@@ -1,0 +1,28 @@
+{
+  "name": "common",
+  "version": "0.1.0",
+  "main": "index.js",
+  "license": "MIT",
+  "author": {
+    "name": "m3g4p0p"
+  },
+  "scripts": {
+    "lint": "standard",
+    "test:single": "jest",
+    "test:watch": "jest --watch"
+  },
+  "husky": {
+    "pre-commit": "lint && test:single"
+  },
+  "standard": {
+    "env": {
+      "jest": true
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "husky": "^3.0.9",
+    "jest": "^24.9.0",
+    "standard": "^14.3.1"
+  }
+}
